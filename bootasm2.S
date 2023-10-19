@@ -97,10 +97,6 @@ getdigit:
     ret     $4                      # Return, removing paramters from stack
 
 
-	ret
-	
-IntBuffer:   .string "     "
-
 real_start:
     movb    %dl, (boot_device) # Boot device number is passed in DL from BIOS. Save it hear since DL might get trashed
 
